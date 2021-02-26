@@ -46,7 +46,7 @@ function onClick(e) {
                 let symbol = document.createElement('div');
                 symbol.className = 'header';
                 let symbolHeader = document.createElement('h2');
-                symbolHeader.innerHTML = "Exhange Rate";
+                symbolHeader.innerHTML = "Exchange Rate";
                 symbol.appendChild(symbolHeader);
                 headerRow.appendChild(symbol);
                 results.appendChild(headerRow);
@@ -86,7 +86,7 @@ function onClick(e) {
                 let symbol = document.createElement('div');
                 symbol.className = 'header';
                 let symbolHeader = document.createElement('h2');
-                symbolHeader.innerHTML = "Exhange Rate";
+                symbolHeader.innerHTML = "Exchange Rate";
                 symbol.appendChild(symbolHeader);
                 headerRow.appendChild(symbol);
                 results.appendChild(headerRow);
