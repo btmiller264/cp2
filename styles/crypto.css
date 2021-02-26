@@ -5,20 +5,12 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #5CDb95;
+    text-align: center;
 }
 
 nav {
     background-color: #05386B;
     color: #EDF5E1; 
-}
-
-.welcome h1 {
-    color: #05386B;
-    margin-top: 25px;
-    font-size: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .find {
@@ -27,8 +19,9 @@ nav {
     justify-content: center;
 }
 
-.find legend {
-    font-size: 2em;
+p {
+    margin-top: 5px;
+    margin-bottom: 0;
     color: #05386B;
 }
 
@@ -37,6 +30,21 @@ form {
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    text-align: center;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 5px;
 }
 
 button {
@@ -59,8 +67,195 @@ footer {
     background-color: #05386B;
     color: #EDF5E1; 
     text-align: center;
-  }
+}
   
   footer a {
     color: #EDF5E1; 
-  }
+}
+
+@media only screen and (min-width: 961px) {
+
+    .welcome h1 {
+        color: #05386B;
+        margin-top: 25px;
+        font-size: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find legend {
+        font-size: 2em;
+        color: #05386B;
+        width: 75%;
+    }
+
+    #results { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        flex-basis: 1 1 0px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-basis: 1 1 0px;
+        width: 90%;
+    }
+    
+    .rowConv {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-basis: 1 1 0px;
+        width: 90%;
+    }
+    
+    .entry,
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border: solid 1px black;
+        flex-flow: row wrap;
+        text-align: center;
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 960px) { 
+
+    .welcome h1 {
+        color: #05386B;
+        margin-top: 25px;
+        font-size: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find legend {
+        font-size: 1.5em;
+        color: #05386B;
+        width: 75%;
+    }
+
+    #results { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1;
+        width: 90%;
+    }
+    
+    .rowConv {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1;
+        width: 90%;
+    }
+    
+    .entry,
+    .header{
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border: solid 1px black;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .entry h3 {
+        font-size: 1.1em;
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+
+    .welcome h1 {
+        color: #05386B;
+        margin-top: 25px;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find legend {
+        font-size: 1.5em;
+        color: #05386B;
+        width: 75%;
+    }
+
+    #results { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1;
+        width: 90%;
+    }
+    
+    .rowConv {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1 1 0px;
+        width: 95%;
+    }
+    
+    .entry,
+    .header {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1 1 0px;
+        border: solid 1px black;
+        flex-flow: row wrap;
+        text-align: center;
+        word-break: break-all;
+    }
+
+    .header h2 {
+        font-size: 0.8em;
+    }
+
+    .entry h3 {
+        font-size: 0.7em;
+        word-break: break-all;
+    }
+}

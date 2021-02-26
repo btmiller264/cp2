@@ -5,20 +5,12 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #5CDb95;
+    text-align: center;
 }
 
 nav {
     background-color: #05386B;
     color: #EDF5E1; 
-}
-
-.welcome h1 {
-    color: #05386B;
-    margin-top: 25px;
-    font-size: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .find {
@@ -39,6 +31,17 @@ form {
     flex-flow: column;
 }
 
+input {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #05386B;
+    text-align: center;
+}
+
 button {
     display: flex;
     align-items: center;
@@ -52,6 +55,7 @@ button {
     font-size: 1.3em;
 }
 
+
 footer {
     position: fixed;
     bottom: 0;
@@ -59,8 +63,160 @@ footer {
     background-color: #05386B;
     color: #EDF5E1; 
     text-align: center;
-  }
+}
   
   footer a {
     color: #EDF5E1; 
-  }
+}
+
+@media only screen and (min-width: 961px) {
+    .welcome h1 {
+        color: #05386B;
+        margin-top: 25px;
+        font-size: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find legend {
+        font-size: 2em;
+        color: #05386B;
+        width: 75%;
+    }
+
+    #results { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        width: 50%;
+    }
+    
+    .header,
+    .entry {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border: solid 1px black;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 960px) { 
+    .welcome h1 {
+        color: #05386B;
+        margin-top: 25px;
+        font-size: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find legend {
+        font-size: 2em;
+        color: #05386B;
+        width: 80%;
+    }
+
+    #results { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        width: 75%;
+    }
+    
+    .header,
+    .entry {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border: solid 1px black;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .welcome h1 {
+        color: #05386B;
+        margin-top: 25px;
+        font-size: 3.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find legend {
+        font-size: 1.5em;
+        color: #05386B;
+        width: 80%;
+    }
+
+    #results { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1;
+        width: 85%;
+    }
+
+    .header,
+    .entry {
+        padding: 5px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1;
+        border: solid 1px black;
+        flex-flow: row wrap;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .header h2 {
+        font-size: 1.5em;
+
+    }
+
+    .entry h3 {
+        font-size: 1.2em;
+        word-break: break-all;
+    }
+}

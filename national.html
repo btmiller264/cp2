@@ -8,12 +8,8 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-expand-lg navbar-dark">  
+            <div id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
@@ -28,13 +24,22 @@
 
         <div class='find'>
             <form class="pure-form>" <fieldset>
-                <legend>Enter an amount to convert: </legend>
+                <legend>Enter an amount to convert, currency ticker to convert from, and currency ticker to convert to: </legend>
                 <input placeholder="Amount" id="amount">
+                <input placeholder="From" id="from">
+                <p>(If from is left blank, it will default to USD)</p>
+                <input placeholder="To" id="to">
+                <p>(If to is left blank, site will return exhange rates for all supported countries)</p>
                 <br>
-                <button id="find" class="pure-button pure-button-primary">Get Rates</button>
+                <button id="exchange" class="pure-button pure-button-primary">Get Rates</button>
                 </fieldset>
               </form>
         </div>
+        <div id="results">
+
+        </div>
+        <script text="type/javascript" src="/national.js">
+        </script>
     </body>
 
     <footer>

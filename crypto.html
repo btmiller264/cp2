@@ -3,17 +3,13 @@
     <head>
         <title>Cryptocurrency API</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <link rel="stylesheet" href="/styles/crypto.css">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-expand-lg navbar-dark">  
+            <div id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
@@ -28,13 +24,25 @@
     
         <div class='find'>
             <form class="pure-form>" <fieldset>
-                <legend>Enter a ticker to get info on a crypto: </legend>
-                <input placeholder="Ticker" id="ticker">
+                <legend>First, press "Get Data" to get id's of the top 50 Cryptocurrencies.
+                        Then, enter in a price and an ID to convert that price to the amount in that coin!
+                </legend>
+                <input placeholder="Coin ID" id="ticker">
+                <input placeholder="Amount" id="amount">
+                <p>(If "Get Crypto" is pressed with input blank, site will return Bitcoin info)</p>
                 <br>
-                <button id="crypto" class="pure-button pure-button-primary">Get Rates</button>
+                <div class='buttons'>
+                    <button id="all" class="pure-button pure-button-primary">Get Data</button>
+                    <button id="crypto" class="pure-button pure-button-primary">Get Crypto</button>
+                </div>
                 </fieldset>
               </form>
         </div>
+        <div id="results">
+
+        </div>
+        <script text="type/javascript" src="/crypto.js">
+        </script>
     </body>
 
     <footer>
